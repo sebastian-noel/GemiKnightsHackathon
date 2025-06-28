@@ -1,10 +1,11 @@
 import React from 'react'
-import { Excalidraw } from "@excalidraw/excalidraw";
+import { Tldraw } from 'tldraw'
+import 'tldraw/tldraw.css'
 const ExcalidrawComponent = () => {
   return (
     
-    <div style={{ width: 800, height: 600 }} className="custom-styles">
-        <Excalidraw/>
+    <div style={{}} className='whiteboard'>
+        <Tldraw/>
     </div>
   )
 }
