@@ -10,4 +10,4 @@ const TldrawComponent = () => {
   )
 }
 
-export default ExcalidrawComponent
+export default TldrawComponent
