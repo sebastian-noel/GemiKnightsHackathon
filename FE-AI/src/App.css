@@ -131,6 +131,14 @@
   cursor: pointer;
   transition: background 0.2s;
 }
+
+.QuestionViewer{
+  color: #115031;
+  width: 50vw ;
+  height: calc(100vh - 3rem);
+  object-fit: contain;
+}
+
 .sliding-menu-edge:hover {
   background: #666;
 }
