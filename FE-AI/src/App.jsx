@@ -5,6 +5,7 @@ import './App.css'
 import TldrawComponent from './components/TldrawComponent'
 import TopNav from './components/TopNav'
 import SlidingMenu from './components/SlidingMenu'
+import Question from './components/Question'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <SlidingMenu/>
       <TopNav/>
       <div className="container">
-        <div className="problem"></div>
+        <div className="problem"><Question/></div>
         <TldrawComponent/>
       </div>
       
