@@ -46,23 +46,20 @@ const TopNav = () => {
   return (
     <div className='TopNav'>
         <select
-            className="topic-dropdown"
+            className="topic-dropdown left-dropdown"
             value={selected}
             onChange={e => setSelected(e.target.value)}
-            style={{ marginRight: '1rem' }}
         >
             {options.map(option => (
             <option key={option} value={option}>{option}</option>
             ))}
         </select>
-
         <button className='submit-btn'>Submit</button>
-        <div className="timer">
-            
+        <div className="timer right-timer">
             <button onClick={handlePlayPause} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-              <DynamicIcon name={isRunning ? "pause" : "play"} color="white" size={48} />
+              <DynamicIcon className="pauseBtn" name={isRunning ? "pause" : "play"} color="white" size={48} />
             </button>
-            <p><p>Time Left: {formatTime(timeLeft)}</p></p>
+            <p>{formatTime(timeLeft)}</p>
         </div>
     </div>
   )
