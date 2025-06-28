@@ -23,3 +23,6 @@
 .problem{
   width: 50vw;
 }
+.container{
+  display: flex;
+}
