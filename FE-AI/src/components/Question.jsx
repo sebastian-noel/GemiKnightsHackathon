@@ -1,5 +1,4 @@
 import React from 'react'
-import Zoom from 'react-medium-image-zoom'
 
 const Question = () => {
   return (
