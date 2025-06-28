@@ -16,7 +16,9 @@
     "lucide-react": "^0.525.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-image-pan-zoom-rotate": "^1.6.0",
     "react-medium-image-zoom": "^5.2.14",
+    "react-svg-pan-zoom": "^3.13.1",
     "tldraw": "^3.13.3"
   },
   "devDependencies": {

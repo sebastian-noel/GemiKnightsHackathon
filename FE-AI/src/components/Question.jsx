@@ -1,13 +1,12 @@
 import React from 'react'
+import ReactPanZoom from 'react-image-pan-zoom-rotate';
 
 const Question = () => {
   return (
-    <div >
-    <img
-      alt="That Wanaka Tree, New Zealand by Laura Smetsers"
-      src="src/assets/FeData/FE-Aug22-03.jpg"
-      className = "QuestionViewer"
-    />
+    <div className = "ImageContainer">
+        <ReactPanZoom alt="Image"
+        image="src/assets/FeData/FE-Aug22-03.jpg"
+        className = "QuestionViewer" />
   </div>
   )
 }
