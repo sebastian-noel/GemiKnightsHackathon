@@ -5,10 +5,11 @@ const Question = () => {
   return (
     <div className = "ImageContainer">
         <ReactPanZoom alt="Image"
-        image="src/assets/FeData/FE-Aug22-03.jpg"
+        image="src/assets/FeData/FE-May25-02.jpg"
         className = "QuestionViewer" />
   </div>
   )
 }
+
 
 export default Question
