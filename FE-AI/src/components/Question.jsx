@@ -139,14 +139,6 @@ const Question = ({ currentQuestion, setCurrentQuestion }) => {
     />
   </div>
   )
-    <div className="ImageContainer">
-      <ReactPanZoom
-        alt="Image"
-        image={`src/assets/Problems/${currentQuestion}`}
-        className="QuestionViewer"
-      />
-    </div>
-  );
 }
 
 export default Question
