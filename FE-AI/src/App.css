@@ -77,12 +77,7 @@
 .container{
   display: flex;
 }
-.ImageContainer{
-  overflow: hidden;
-  width: 50vw;
-  height: calc(100vh - 3rem);;
-  position: relative;
-}
+
 .sliding-menu {
   position: fixed;
   top: 2.8rem;

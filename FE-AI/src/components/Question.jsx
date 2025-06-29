@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactPanZoom from 'react-image-pan-zoom-rotate';
 
 const problemImages = [
   "FE-Aug22-02.jpg",
@@ -132,6 +131,14 @@ const problemImages = [
 const Question = ({ currentQuestion, setCurrentQuestion }) => {
   // Optionally, allow navigation between questions in the future
   return (
+    <div >
+    <img
+      alt="That Wanaka Tree, New Zealand by Laura Smetsers"
+      src="src/assets/FeData/FE-Aug22-03.jpg"
+      className = "QuestionViewer"
+    />
+  </div>
+  )
     <div className="ImageContainer">
       <ReactPanZoom
         alt="Image"
