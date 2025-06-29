@@ -127,14 +127,19 @@ const problemImages = [
   "FE-May25-17.jpg"
 ];
 
-const Question = () => {
+
+// Add prop to get/set current question image
+const Question = ({ currentQuestion, setCurrentQuestion }) => {
+  // Optionally, allow navigation between questions in the future
   return (
-    <div className = "ImageContainer">
-        <ReactPanZoom alt="Image"
-        image="src/assets/Problems/FE-Aug22-02.jpg"
-        className = "QuestionViewer" />
-  </div>
-  )
+    <div className="ImageContainer">
+      <ReactPanZoom
+        alt="Image"
+        image={`src/assets/Problems/${currentQuestion}`}
+        className="QuestionViewer"
+      />
+    </div>
+  );
 }
 
 export default Question
