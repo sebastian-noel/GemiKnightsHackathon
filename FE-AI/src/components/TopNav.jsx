@@ -14,7 +14,7 @@ const options = [
 ];
 const TEN_MINUTES = 10 * 60; // seconds
 
-const TopNav = () => {
+const TopNav = ({ onSubmit }) => {
     const [selected, setSelected] = useState(options[0]);
     const [timeLeft, setTimeLeft] = useState(TEN_MINUTES);
     const [isRunning, setIsRunning] = useState(false);
@@ -45,24 +45,23 @@ const TopNav = () => {
     };
   return (
     <div className='TopNav'>
-        <select
-            className="topic-dropdown left-dropdown"
-            value={selected}
-            onChange={e => setSelected(e.target.value)}
-        >
-            {options.map(option => (
-            <option key={option} value={option}>{option}</option>
-            ))}
-        </select>
-        <button className='submit-btn'>Submit</button>
-        <div className="timer right-timer">
-            <button onClick={handlePlayPause} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-              <DynamicIcon className="pauseBtn" name={isRunning ? "pause" : "play"} color="white" size={48} />
-            </button>
-            <p>{formatTime(timeLeft)}</p>
-        </div>
+      <select
+        className="topic-dropdown left-dropdown"
+        value={selected}
+        onChange={e => setSelected(e.target.value)}
+      >
+        {options.map(option => (
+          <option key={option} value={option}>{option}</option>
+        ))}
+      </select>
+      <button className='submit-btn' onClick={onSubmit}>Submit</button>
+      <div className="timer right-timer">
+        <button onClick={handlePlayPause} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+          <DynamicIcon className="pauseBtn" name={isRunning ? "pause" : "play"} color="white" size={48} />
+        </button>
+        <p>{formatTime(timeLeft)}</p>
+      </div>
     </div>
   )
 }
-
 export default TopNav
