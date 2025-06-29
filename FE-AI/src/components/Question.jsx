@@ -128,7 +128,7 @@ const problemImages = [
 
 
 // Add prop to get/set current question image
-const Question = ({ currentQuestion, setCurrentQuestion }) => {
+const Question = () => {
   // Optionally, allow navigation between questions in the future
   return (
     <div >
