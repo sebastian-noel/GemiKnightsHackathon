@@ -1,6 +1,5 @@
 
 import React, { useState, useRef } from 'react';
-import domtoimage from 'dom-to-image-more';
 import './App.css';
 import TldrawComponent from './components/TldrawComponent';
 import TopNav from './components/TopNav';
@@ -23,6 +22,7 @@ function App() {
   const handleSubmitScreenshot = async () => {
     setIsLoading(true);
     try {
+      console.log("I SUBMITEDED")
       // 1. Export student answer from tldraw as PNG
       let studentBase64 = null;
       if (tldrawRef.current && tldrawRef.current.exportImage) {
